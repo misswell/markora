@@ -58,6 +58,12 @@
         "role": "Editor",
         "mimeType": "text/markdown"
       }
-    ]
+    ],
+    "macOS": {
+      "entitlements": "entitlements.plist",
+      "exceptionDomain": "",
+      "frameworks": [],
+      "minimumSystemVersion": "11.0"
+    }
   }
 }

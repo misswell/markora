@@ -135,8 +135,9 @@ function App() {
       : note))
   }, [active?.id])
 
+  const extensions = useMemo(() => createEditorExtensions(active?.filePath), [active?.filePath])
   const editor = useEditor({
-    extensions: createEditorExtensions(active?.filePath),
+    extensions,
     content: active?.markdown ?? '',
     contentType: 'markdown',
     editorProps: {
@@ -160,7 +161,7 @@ function App() {
       updateActive({ markdown: editor.getMarkdown() })
     },
     immediatelyRender: false,
-  }, [active?.filePath, active?.id])
+  }, [active?.filePath])
 
   useEffect(() => { editorRef.current = editor }, [editor])
 

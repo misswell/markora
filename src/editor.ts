@@ -149,13 +149,17 @@ function localImage(documentPath?: string) {
   })
 }
 
+let cachedLowlight: ReturnType<typeof createLowlight> | null = null
+
 export function createEditorExtensions(documentPath?: string) {
-  const lowlight = createLowlight(common)
+  if (!cachedLowlight) {
+    cachedLowlight = createLowlight(common)
+  }
   return [
     StarterKit.configure({
       codeBlock: false,
     }),
-    CodeBlockLowlight.configure({ lowlight }),
+    CodeBlockLowlight.configure({ lowlight: cachedLowlight }),
     localImage(documentPath),
     Mathematics.configure({
       katexOptions: { throwOnError: false },
