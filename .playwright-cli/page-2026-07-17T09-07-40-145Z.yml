@@ -1,0 +1,94 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - textbox "文稿标题" [ref=e8]: 欢迎使用 TypeDown
+      - generic [ref=e9]: 已存入文稿库
+    - generic [ref=e10]:
+      - button "专注模式" [ref=e11] [cursor=pointer]
+      - button "主题" [ref=e18] [cursor=pointer]
+      - button "更多" [ref=e25] [cursor=pointer]
+  - complementary [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - button "文稿" [ref=e33] [cursor=pointer]
+        - button "文件夹" [ref=e38] [cursor=pointer]
+        - button "大纲" [ref=e44] [cursor=pointer]
+      - button "新建文稿" [ref=e48] [cursor=pointer]
+    - textbox [ref=e56]:
+      - /placeholder: 搜索文稿
+    - article [ref=e58]:
+      - generic [ref=e59]:
+        - strong [ref=e60]: 欢迎使用 TypeDown
+        - generic [ref=e61]: 17:07
+      - paragraph [ref=e62]: 欢迎使用 TypeDown 像写字一样写 Markdown。格式标记会让位给内容，让你的注意力留在文字上。 从这里开始 点击任意文字即可编辑
+    - generic [ref=e63]:
+      - button "文件夹" [ref=e64] [cursor=pointer]
+      - button "打开" [ref=e70] [cursor=pointer]
+      - button "保存" [ref=e74] [cursor=pointer]
+  - main [ref=e79]:
+    - navigation [ref=e80]:
+      - button "收起侧栏" [ref=e81] [cursor=pointer]
+      - button "撤销" [ref=e86] [cursor=pointer]
+      - button "重做" [ref=e90] [cursor=pointer]
+      - button "一级标题" [ref=e95] [cursor=pointer]
+      - button "二级标题" [ref=e98] [cursor=pointer]
+      - button "三级标题" [ref=e101] [cursor=pointer]
+      - button "加粗" [ref=e105] [cursor=pointer]
+      - button "斜体" [ref=e108] [cursor=pointer]
+      - button "下划线 ⌘U" [ref=e111] [cursor=pointer]
+      - button "删除线" [ref=e114] [cursor=pointer]
+      - button "高亮" [ref=e118] [cursor=pointer]
+      - button "下标" [ref=e122] [cursor=pointer]
+      - button "上标" [ref=e127] [cursor=pointer]
+      - button "行内代码" [ref=e132] [cursor=pointer]
+      - button "链接" [ref=e136] [cursor=pointer]
+      - button "无序列表" [ref=e141] [cursor=pointer]
+      - button "有序列表" [ref=e143] [cursor=pointer]
+      - button "引用" [ref=e147] [cursor=pointer]
+      - button "代码块" [ref=e151] [cursor=pointer]
+      - button "表格" [ref=e156] [cursor=pointer]
+      - button "分隔线" [ref=e159] [cursor=pointer]
+      - button "数学公式" [ref=e161] [cursor=pointer]
+      - button "表情" [ref=e164] [cursor=pointer]
+      - button "切换 Markdown 源码" [ref=e168] [cursor=pointer]
+      - button "打开 Markdown 文件" [ref=e172] [cursor=pointer]
+      - button "保存 Markdown 文件" [ref=e175] [cursor=pointer]
+      - button "导出 HTML" [ref=e180] [cursor=pointer]
+      - button "导出 PDF" [ref=e184] [cursor=pointer]
+    - generic [ref=e193]:
+      - heading "欢迎使用 TypeDown" [level=1] [ref=e194]
+      - paragraph [ref=e195]: 像写字一样写 Markdown。格式标记会让位给内容，让你的注意力留在文字上。
+      - heading "从这里开始" [level=2] [ref=e196]
+      - list [ref=e197]:
+        - listitem [ref=e198]:
+          - paragraph [ref=e199]: 点击任意文字即可编辑
+        - listitem [ref=e200]:
+          - paragraph [ref=e201]: 用顶部工具栏添加标题、加粗、链接与代码
+        - listitem [ref=e202]:
+          - paragraph [ref=e203]: 文稿会自动保存在本机
+        - listitem [ref=e204]:
+          - paragraph [ref=e205]:
+            - text: 可以导入或导出标准
+            - strong [ref=e206]: Markdown
+            - text: 文件
+      - blockquote [ref=e207]:
+        - paragraph [ref=e208]: 简洁不是少，而是恰到好处。
+      - heading "常用快捷键" [level=3] [ref=e209]
+      - paragraph [ref=e210]:
+        - text: 使用
+        - strong [ref=e211]: ⌘ B
+        - text: 加粗、
+        - emphasis [ref=e212]: ⌘ I
+        - text: 斜体，或按
+        - strong [ref=e213]: ⌘ S
+        - text: 导出当前文稿。
+      - paragraph [ref=e214]:
+        - code [ref=e215]: TypeDown
+        - text: 正在持续变得更好。
+    - generic [ref=e216]:
+      - generic [ref=e217]:
+        - button "专注模式" [ref=e218] [cursor=pointer]
+        - button "打字机" [ref=e225] [cursor=pointer]
+      - generic [ref=e231]: 129 字
+      - generic [ref=e233]: 237 字符
+      - generic [ref=e235]: Markdown

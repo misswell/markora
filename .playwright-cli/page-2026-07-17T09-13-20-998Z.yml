@@ -1,0 +1,78 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - textbox "文稿标题" [ref=e8]: 未命名文稿 3
+      - generic [ref=e9]: 已存入文稿库
+    - generic [ref=e10]:
+      - button "专注模式" [ref=e11] [cursor=pointer]
+      - button "主题" [ref=e18] [cursor=pointer]
+      - button "更多" [ref=e25] [cursor=pointer]
+  - complementary [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - button "文稿" [ref=e33] [cursor=pointer]
+        - button "文件夹" [ref=e38] [cursor=pointer]
+        - button "大纲" [ref=e44] [cursor=pointer]
+      - button "新建文稿" [active] [ref=e48] [cursor=pointer]
+    - textbox [ref=e56]:
+      - /placeholder: 搜索文稿
+    - generic [ref=e57]:
+      - article [ref=e245]:
+        - generic [ref=e246]:
+          - strong [ref=e247]: 未命名文稿 3
+          - generic [ref=e248]: 17:13
+        - paragraph [ref=e249]: 未命名文稿 开始写作…
+      - article [ref=e236]:
+        - generic [ref=e237]:
+          - strong [ref=e238]: 未命名文稿 2
+          - generic [ref=e239]: 17:13
+        - paragraph [ref=e240]: 未命名文稿 开始写作…
+      - article [ref=e58]:
+        - generic [ref=e59]:
+          - strong [ref=e60]: 欢迎使用 TypeDown
+          - generic [ref=e61]: 17:12
+        - paragraph [ref=e62]: 欢迎使用 TypeDown 像写字一样写 Markdown。格式标记会让位给内容，让你的注意力留在文字上。 从这里开始 点击任意文字即可编辑
+    - generic [ref=e63]:
+      - button "文件夹" [ref=e64] [cursor=pointer]
+      - button "打开" [ref=e70] [cursor=pointer]
+      - button "保存" [ref=e74] [cursor=pointer]
+  - main [ref=e79]:
+    - navigation [ref=e80]:
+      - button "收起侧栏" [ref=e81] [cursor=pointer]
+      - button "撤销" [ref=e86] [cursor=pointer]
+      - button "重做" [ref=e90] [cursor=pointer]
+      - button "一级标题" [ref=e95] [cursor=pointer]
+      - button "二级标题" [ref=e98] [cursor=pointer]
+      - button "三级标题" [ref=e101] [cursor=pointer]
+      - button "加粗" [ref=e105] [cursor=pointer]
+      - button "斜体" [ref=e108] [cursor=pointer]
+      - button "下划线 ⌘U" [ref=e111] [cursor=pointer]
+      - button "删除线" [ref=e114] [cursor=pointer]
+      - button "高亮" [ref=e118] [cursor=pointer]
+      - button "下标" [ref=e122] [cursor=pointer]
+      - button "上标" [ref=e127] [cursor=pointer]
+      - button "行内代码" [ref=e132] [cursor=pointer]
+      - button "链接" [ref=e136] [cursor=pointer]
+      - button "无序列表" [ref=e141] [cursor=pointer]
+      - button "有序列表" [ref=e143] [cursor=pointer]
+      - button "引用" [ref=e147] [cursor=pointer]
+      - button "代码块" [ref=e151] [cursor=pointer]
+      - button "表格" [ref=e156] [cursor=pointer]
+      - button "分隔线" [ref=e159] [cursor=pointer]
+      - button "数学公式" [ref=e161] [cursor=pointer]
+      - button "表情" [ref=e164] [cursor=pointer]
+      - button "切换 Markdown 源码" [ref=e168] [cursor=pointer]
+      - button "打开 Markdown 文件" [ref=e172] [cursor=pointer]
+      - button "保存 Markdown 文件" [ref=e175] [cursor=pointer]
+      - button "导出 HTML" [ref=e180] [cursor=pointer]
+      - button "导出 PDF" [ref=e184] [cursor=pointer]
+    - generic [ref=e251]:
+      - heading "未命名文稿" [level=1] [ref=e252]
+      - paragraph [ref=e253]: 开始写作…
+    - generic [ref=e216]:
+      - generic [ref=e217]:
+        - button "专注模式" [ref=e218] [cursor=pointer]
+        - button "打字机" [ref=e225] [cursor=pointer]
+      - generic [ref=e231]: 9 字
+      - generic [ref=e233]: 14 字符
+      - generic [ref=e235]: Markdown

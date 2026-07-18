@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markora vs Typora 对比报告 (更新版)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1a1a1a; padding: 40px; line-height: 1.6; }
+h1 { font-size: 28px; margin-bottom: 8px; }
+.sub { color: #666; margin-bottom: 30px; font-size: 14px; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.06); margin-bottom: 20px; }
+th { background: #4a90d9; color: #fff; text-align: left; padding: 10px 14px; font-size: 13px; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #eee; font-size: 13px; }
+td:first-child { font-weight: 500; }
+tr:last-child td { border-bottom: none; }
+.yes { color: #28a745; font-weight: 600; }
+.no { color: #d73a49; font-weight: 600; }
+.partial { color: #f0ad4e; font-weight: 600; }
+.section { font-size: 18px; font-weight: 700; margin: 24px 0 10px; color: #333; }
+.new { background: #e6f4ea; padding: 1px 6px; border-radius: 3px; font-size: 11px; color: #28a745; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Markora vs Typora 功能对比 <span style="font-size:14px;color:#28a745">（已更新）</span></h1>
+<p class="sub">生成于 2026-07-17 · Tauri 2 + React + Tiptap v3 · 所有测试通过 (12+3)</p>
+
+<p class="section">核心编辑</p>
+<table>
+<tr><th>功能</th><th>Markora</th><th>Typora</th></tr>
+<tr><td>WYSIWYG 实时预览</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>源码模式切换 ⌘/</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>标题 ⌘1-6</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>加粗/斜体/删除线</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>高亮</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>上下标</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>行内代码/代码块</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>表格</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>数学公式 KaTeX</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>任务列表</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>自动配对括号</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>Tab 列表缩进</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+</table>
+
+<p class="section">快捷键</p>
+<table>
+<tr><th>快捷键</th><th>Markora</th><th>Typora</th></tr>
+<tr><td>⌘B 加粗 / ⌘I 斜体</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>⌘K 插入链接</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘P 快速打开</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘T 插入表格</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘⇧M 数学公式</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘⇧I 插入图片</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘⇧H 高亮</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘⇧K 代码块</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘] ⌘[ 缩进</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘⇧F 切换侧栏</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>F8 专注模式</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>F9 打字机模式</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>⌘+ ⌘- ⌘\ 缩放</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+</table>
+
+<p class="section">文件管理</p>
+<table>
+<tr><th>功能</th><th>Markora</th><th>Typora</th></tr>
+<tr><td>文件树</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>大纲视图</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>快速打开面板 ⌘P</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+<tr><td>本地文稿库</td><td class="yes">✅</td><td class="partial">⚠️</td></tr>
+<tr><td>外部文件监听</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>原子写入保存</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+</table>
+
+<p class="section">导出 & 主题</p>
+<table>
+<tr><th>功能</th><th>Markora</th><th>Typora</th></tr>
+<tr><td>导出 PDF</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>导出 HTML</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>多主题切换</td><td class="yes">✅ 5种</td><td class="yes">✅</td></tr>
+<tr><td>暗色模式</td><td class="yes">✅</td><td class="yes">✅</td></tr>
+<tr><td>字体缩放</td><td class="yes">✅ <span class="new">新增</span></td><td class="yes">✅</td></tr>
+</table>
+
+</body>
+</html>

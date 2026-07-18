@@ -1,0 +1,141 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - textbox "文稿标题" [ref=e8]: 欢迎使用 Markora
+      - generic [ref=e9]: 已存入文稿库
+    - generic [ref=e10]:
+      - button "专注模式" [ref=e11] [cursor=pointer]
+      - button "主题" [ref=e18] [cursor=pointer]
+      - button "更多" [ref=e26] [cursor=pointer]
+  - complementary [ref=e31]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - button "文稿" [ref=e34] [cursor=pointer]
+        - button "文件夹" [ref=e39] [cursor=pointer]
+        - button "大纲" [ref=e45] [cursor=pointer]
+      - button "新建文稿" [ref=e49] [cursor=pointer]
+    - textbox [ref=e57]:
+      - /placeholder: 搜索文稿
+    - article [ref=e59]:
+      - generic [ref=e60]:
+        - strong [ref=e61]: 欢迎使用 Markora
+        - generic [ref=e62]: 17:43
+      - paragraph [ref=e63]: 欢迎使用 Markora 像写字一样写 Markdown。格式标记会让位给内容，让你的注意力留在文字上。 从这里开始 点击任意文字即可编辑 用
+    - generic [ref=e64]:
+      - button "文件夹" [ref=e65] [cursor=pointer]
+      - button "打开" [ref=e71] [cursor=pointer]
+      - button "保存" [ref=e75] [cursor=pointer]
+  - main [ref=e80]:
+    - navigation [ref=e81]:
+      - button "收起侧栏" [ref=e82] [cursor=pointer]
+      - button "撤销" [ref=e87] [cursor=pointer]
+      - button "重做" [ref=e91] [cursor=pointer]
+      - button "一级标题" [ref=e96] [cursor=pointer]
+      - button "二级标题" [ref=e99] [cursor=pointer]
+      - button "三级标题" [ref=e102] [cursor=pointer]
+      - button "加粗" [ref=e106] [cursor=pointer]
+      - button "斜体" [ref=e109] [cursor=pointer]
+      - button "下划线 ⌘U" [ref=e112] [cursor=pointer]
+      - button "删除线" [ref=e115] [cursor=pointer]
+      - button "高亮" [ref=e119] [cursor=pointer]
+      - button "下标" [ref=e123] [cursor=pointer]
+      - button "上标" [ref=e128] [cursor=pointer]
+      - button "行内代码" [ref=e133] [cursor=pointer]
+      - button "链接" [ref=e137] [cursor=pointer]
+      - button "无序列表" [ref=e142] [cursor=pointer]
+      - button "有序列表" [ref=e144] [cursor=pointer]
+      - button "引用" [ref=e148] [cursor=pointer]
+      - button "代码块" [ref=e152] [cursor=pointer]
+      - button "表格" [ref=e157] [cursor=pointer]
+      - button "分隔线" [ref=e160] [cursor=pointer]
+      - button "数学公式" [ref=e162] [cursor=pointer]
+      - button "表情" [ref=e165] [cursor=pointer]
+      - button "切换 Markdown 源码" [ref=e169] [cursor=pointer]
+      - button "打开 Markdown 文件" [ref=e173] [cursor=pointer]
+      - button "保存 Markdown 文件" [ref=e176] [cursor=pointer]
+      - button "导出 HTML" [ref=e181] [cursor=pointer]
+      - button "导出 PDF" [ref=e185] [cursor=pointer]
+    - generic [ref=e194]:
+      - heading "欢迎使用 Markora" [level=1] [ref=e195]
+      - paragraph [ref=e196]: 像写字一样写 Markdown。格式标记会让位给内容，让你的注意力留在文字上。
+      - heading "从这里开始" [level=2] [ref=e197]
+      - list [ref=e198]:
+        - listitem [ref=e199]:
+          - paragraph [ref=e200]: 点击任意文字即可编辑
+        - listitem [ref=e201]:
+          - paragraph [ref=e202]: 用顶部工具栏添加标题、加粗、链接与代码
+        - listitem [ref=e203]:
+          - paragraph [ref=e204]: 文稿会自动保存在本机
+        - listitem [ref=e205]:
+          - paragraph [ref=e206]:
+            - text: 可以导入或导出标准
+            - strong [ref=e207]: Markdown
+            - text: 文件
+      - blockquote [ref=e208]:
+        - paragraph [ref=e209]: 简洁不是少，而是恰到好处。
+      - heading "常用快捷键" [level=3] [ref=e210]
+      - paragraph [ref=e211]:
+        - text: 使用
+        - strong [ref=e212]: ⌘ B
+        - text: 加粗、
+        - emphasis [ref=e213]: ⌘ I
+        - text: 斜体，或按
+        - strong [ref=e214]: ⌘ S
+        - text: 导出当前文稿。
+      - paragraph [ref=e215]:
+        - code [ref=e216]: Markora
+        - text: 正在持续变得更好。
+    - generic [ref=e217]:
+      - generic [ref=e218]:
+        - button "专注模式" [ref=e219] [cursor=pointer]
+        - button "打字机" [ref=e226] [cursor=pointer]
+      - generic [ref=e232]: 129 字
+      - generic [ref=e234]: 235 字符
+      - generic [ref=e236]: Markdown
+  - generic [ref=e289]:
+    - generic [ref=e290]:
+      - heading "偏好设置" [level=2] [ref=e291]
+      - button "关闭" [ref=e292] [cursor=pointer]
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - generic [ref=e298]: 字体
+        - generic [ref=e299]:
+          - button "衬线" [ref=e300] [cursor=pointer]
+          - button "无衬线" [ref=e301] [cursor=pointer]
+          - button "等宽" [ref=e302] [cursor=pointer]
+      - generic [ref=e303]:
+        - generic [ref=e304]:
+          - text: 字号
+          - generic [ref=e305]: 16px
+        - generic [ref=e306]:
+          - button "－" [ref=e307] [cursor=pointer]
+          - slider [ref=e308]: "16"
+          - button "＋" [ref=e309] [cursor=pointer]
+      - generic [ref=e310]:
+        - generic [ref=e311]:
+          - text: 行距
+          - generic [ref=e312]: "1.85"
+        - generic [ref=e313]:
+          - button "－" [ref=e314] [cursor=pointer]
+          - slider [ref=e315]: "1.85"
+          - button "＋" [ref=e316] [cursor=pointer]
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - text: 整体缩放
+          - generic [ref=e319]: 100%
+        - generic [ref=e320]:
+          - button "－" [ref=e321] [cursor=pointer]
+          - slider [ref=e322]: "1"
+          - button "＋" [ref=e323] [cursor=pointer]
+          - button "重置" [ref=e324] [cursor=pointer]
+      - generic [ref=e325]:
+        - generic [ref=e326]: 主题
+        - generic [ref=e327]:
+          - button "自动" [ref=e328] [cursor=pointer]
+          - button "GitHub" [ref=e329] [cursor=pointer]
+          - button "新闻纸" [ref=e330] [cursor=pointer]
+          - button "夜间" [ref=e331] [cursor=pointer]
+          - button "Pixyll" [ref=e332] [cursor=pointer]
+    - generic [ref=e333]:
+      - button "恢复默认" [ref=e334] [cursor=pointer]
+      - button "完成" [ref=e335] [cursor=pointer]
