@@ -100,15 +100,22 @@ create_dmg() {
   mkdir -p "${DMG_DIR}"
   # Remove stale dmg so hdiutil doesn't error out on existing -ov
   [[ -f "${DMG_PATH}" ]] && rm -f "${DMG_PATH}"
+  # Build a DMG root containing both the app and an Applications symlink,
+  # so users get the classic drag-to-Applications install layout.
+  local dmg_root
+  dmg_root="$(mktemp -d)"
+  cp -RPp "${APP_PATH}" "${dmg_root}/"
+  ln -s /Applications "${dmg_root}/Applications"
   # macOS 26 (Tahoe) defaults to APFS; APFS breaks code signature hashes inside DMG.
   # Force HFS+ with UDZO compression for a notarization-friendly DMG.
   hdiutil create \
     -volname "${APP_NAME}" \
-    -srcfolder "${APP_PATH}" \
+    -srcfolder "${dmg_root}" \
     -ov \
     -format UDZO \
     -fs HFS+ \
     "${DMG_PATH}"
+  rm -rf "${dmg_root}"
   ok "DMG created"
 }
 
