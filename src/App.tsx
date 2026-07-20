@@ -1018,17 +1018,52 @@ ${html}
         if (!note) return
         const change = classifyExternalChange(note, diskMarkdown)
         if (change === 'reload') {
-          const next = notesRef.current.map((candidate) => candidate.filePath === path
-            ? { ...candidate, markdown: diskMarkdown, diskMarkdown, updatedAt: Date.now() }
-            : candidate)
-          notesRef.current = next
-          setNotes(next)
-          setExternalConflicts((current) => {
-            const updated = new Set(current)
-            updated.delete(path)
-            return updated
-          })
-          setMessage('已载入磁盘上的最新修改')
+          // 本地未编辑但磁盘已被外部程序改动：询问是重新加载还是用当前内容覆盖磁盘
+          const confirmed = window.confirm(
+            '检测到该文件已被其他程序修改。\n\n' +
+            '• 点击「确定」：重新加载磁盘上的最新内容（替换当前查看内容）\n' +
+            '• 点击「取消」：保留当前内容并覆盖磁盘文件（撤销外部修改）',
+          )
+          if (disposed) return
+          if (confirmed) {
+            const next = notesRef.current.map((candidate) => candidate.filePath === path
+              ? { ...candidate, markdown: diskMarkdown, diskMarkdown, updatedAt: Date.now() }
+              : candidate)
+            notesRef.current = next
+            setNotes(next)
+            setExternalConflicts((current) => {
+              const updated = new Set(current)
+              updated.delete(path)
+              return updated
+            })
+            setMessage('已载入磁盘上的最新修改')
+          } else {
+            try {
+              const savedPath = await saveNativeDocument(
+                path,
+                note.title,
+                note.markdown,
+                note.diskMarkdown,
+                true,
+              )
+              if (disposed) return
+              if (savedPath) {
+                const next = notesRef.current.map((candidate) => candidate.filePath === path
+                  ? { ...candidate, diskMarkdown: note.markdown, updatedAt: Date.now() }
+                  : candidate)
+                notesRef.current = next
+                setNotes(next)
+                setExternalConflicts((current) => {
+                  const updated = new Set(current)
+                  updated.delete(path)
+                  return updated
+                })
+                setMessage('已用当前内容覆盖磁盘文件')
+              }
+            } catch (error) {
+              if (!disposed) setMessage(`覆盖失败：${String(error)}`)
+            }
+          }
         } else if (change === 'conflict') {
           setExternalConflicts((current) => current.has(path) ? current : new Set(current).add(path))
         } else {
